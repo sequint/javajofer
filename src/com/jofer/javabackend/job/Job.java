@@ -14,8 +14,14 @@ public class Job {
     }
 
     // Setter methods
-    public void setTitle( String jobTitle ) { title = jobTitle; }
-    public void setCompany( String jobCompany ) { company = jobCompany; }
-    public void setDepartment( String jobDepartment ) { department = jobDepartment; }
+    public void setTitle( String jobTitle ) {
+        title = jobTitle;
+    }
+    public void setCompany( String jobCompany ) {
+        company = jobCompany;
+    }
+    public void setDepartment( String jobDepartment ) {
+        department = jobDepartment;
+    }
 
 }

@@ -16,15 +16,31 @@ public class User {
     }
 
     // Setter methods
-    public void setFirstName( String first ) { firstName = first; }
-    public void setLastName( String last ) { lastName = last; }
-    public void setUsername( String userNm ) { username = userNm; }
-    public void setAvatar( String avt ) { avatar = avt; }
+    public void setFirstName( String first ) {
+        firstName = first;
+    }
+    public void setLastName( String last ) {
+        lastName = last;
+    }
+    public void setUsername( String userNm ) {
+        username = userNm;
+    }
+    public void setAvatar( String avt ) {
+        avatar = avt;
+    }
 
     // Getter methods
-    public String getFirstName() { return firstName; }
-    public String getLastName() { return lastName; }
-    public String getUsername() { return username; }
-    public String getAvatar() { return avatar; }
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public String getUsername() {
+        return username;
+    }
+    public String getAvatar() {
+        return avatar;
+    }
 
 }
