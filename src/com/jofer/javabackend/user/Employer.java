@@ -34,4 +34,5 @@ public class Employer extends User {
     public ArrayList<Job> getPostedJobs() {
         return postedJobs;
     }
+
 }
