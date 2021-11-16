@@ -1,9 +1,8 @@
 package com.jofer.javabackend;
 
-import com.jofer.javabackend.job.*;
-import com.jofer.javabackend.user.*;
-
-import java.util.ArrayList;
+import com.jofer.javabackend.util.Applicant;
+import com.jofer.javabackend.util.Employer;
+import com.jofer.javabackend.util.Job;
 
 // Currently testing in terminal basic functionality of Jofer GUI.
 public class Main {

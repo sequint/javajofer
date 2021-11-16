@@ -1,9 +1,7 @@
-package com.jofer.javabackend.job;
+package com.jofer.javabackend.util;
 
 import java.util.ArrayList;
 import java.util.UUID;
-import com.jofer.javabackend.user.Applicant;
-import com.jofer.javabackend.user.Employer;
 
 public class Job {
     // Job class private variables

@@ -1,7 +1,6 @@
-package com.jofer.javabackend.user;
+package com.jofer.javabackend.util;
 
 import java.util.ArrayList;
-import com.jofer.javabackend.job.Job;
 
 public class Applicant extends User {
     // Applicant private class variables.

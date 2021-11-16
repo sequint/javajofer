@@ -1,4 +1,4 @@
-package com.jofer.javabackend.user;
+package com.jofer.javabackend.util;
 
 import java.util.UUID;
 
