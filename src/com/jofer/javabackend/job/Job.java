@@ -28,4 +28,18 @@ public class Job {
         department = jobDepartment;
     }
 
+    // Getter methods
+    public String getiD() {
+        return iD;
+    }
+    public String getTitle() {
+        return title;
+    }
+    public String getCompany() {
+        return company;
+    }
+    public String getDepartment() {
+        return department;
+    }
+
 }
