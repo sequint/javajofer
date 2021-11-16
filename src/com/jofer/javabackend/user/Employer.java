@@ -1,11 +1,10 @@
 package com.jofer.javabackend.user;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import com.jofer.javabackend.job.Job;
 
 public class Employer extends User {
-    // Create unique attributes for Employer class.
+    // Employer private class variables.
     String company;
     ArrayList<Job> postedJobs;
 
