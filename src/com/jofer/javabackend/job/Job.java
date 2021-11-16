@@ -3,13 +3,14 @@ package com.jofer.javabackend.job;
 import java.util.ArrayList;
 import java.util.UUID;
 import com.jofer.javabackend.user.Applicant;
+import com.jofer.javabackend.user.Employer;
 
 public class Job {
     // Job class private variables
     String iD,
             title,
-            department,
-            employer;
+            department;
+    Employer employer;
     ArrayList<Applicant> applicants;
 
     // Default Constructor
@@ -17,7 +18,7 @@ public class Job {
         iD = UUID.randomUUID().toString();
         title = "";
         department = "";
-        employer = "";
+        employer = new Employer();
         applicants = new ArrayList<>();
     }
 
@@ -28,11 +29,16 @@ public class Job {
     public void setDepartment( String jobDepartment ) {
         department = jobDepartment;
     }
-    public void setEmployer( String employerID ) {
-        employer = employerID;
+    public void setEmployer( Employer employ ) {
+        employer = employ;
     }
     public void setApplicants( ArrayList<Applicant> aplcs ) {
         applicants = aplcs;
+    }
+
+    // Add one applicant.
+    public void addOneApplicant( Applicant applicant ) {
+        applicants.add( applicant );
     }
 
     // Getter methods
@@ -45,7 +51,7 @@ public class Job {
     public String getDepartment() {
         return department;
     }
-    public String getEmployer() {
+    public Employer getEmployer() {
         return employer;
     }
     public ArrayList<Applicant> getApplicants() {
