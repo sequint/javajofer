@@ -1,15 +1,18 @@
 package com.jofer.javabackend.user;
 
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.HashMap;
+import com.jofer.javabackend.job.Job;
 
 public class Employer extends User {
     // Create unique attributes for Employer class.
     String company;
-    // Create a vector for posted jobs.
+    ArrayList<Job> postedJobs;
 
     // Default Constructor
     public Employer() {
         company = "";
+        postedJobs = new ArrayList<Job>();
     }
 
     // Setter methods
