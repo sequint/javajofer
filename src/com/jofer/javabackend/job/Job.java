@@ -1,13 +1,17 @@
 package com.jofer.javabackend.job;
 
+import java.util.UUID;
+
 public class Job {
     // Job class private variables
-    String title,
+    String iD,
+            title,
             company,
             department;
 
     // Default Constructor
     public Job() {
+        iD = UUID.randomUUID().toString();
         title = "";
         company = "";
         department = "";

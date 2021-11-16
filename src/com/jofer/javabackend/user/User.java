@@ -1,14 +1,18 @@
 package com.jofer.javabackend.user;
 
+import java.util.UUID;
+
 public class User {
     // User class private variables
-    String firstName,
+    String iD,
+            firstName,
             lastName,
             username,
             avatar;
 
     // Default Constructor
     public User() {
+        iD = UUID.randomUUID().toString();
         firstName = "";
         lastName = "";
         username = "";
