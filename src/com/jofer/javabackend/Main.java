@@ -7,6 +7,7 @@ import com.jofer.javabackend.user.*;
 public class Main {
 
     public static void main( String[] args ) {
+
         // Create a new employer.
         Employer nextEmployer = new Employer();
 
@@ -36,6 +37,20 @@ public class Main {
         System.out.println(nextApplicant.getFirstName());
         System.out.println(nextApplicant.getLastName());
         System.out.println(nextApplicant.getUsername());
+
+        // Create a new job.
+        Job nextJob = new Job();
+
+        nextJob.setTitle("Software Engineer");
+        nextJob.setDepartment("Engineering");
+        nextJob.setEmployer(nextEmployer);
+        nextJob.addOneApplicant(nextApplicant);
+
+        // Print job information
+        System.out.println(nextJob.getTitle());
+        System.out.println(nextJob.getDepartment());
+        System.out.println(nextJob.getEmployer());
+        System.out.println(nextJob.getApplicants());
 
     }
 }
