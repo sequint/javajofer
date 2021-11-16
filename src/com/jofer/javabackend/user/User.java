@@ -34,6 +34,9 @@ public class User {
     }
 
     // Getter methods
+    public String getiD() {
+        return iD;
+    }
     public String getFirstName() {
         return firstName;
     }
