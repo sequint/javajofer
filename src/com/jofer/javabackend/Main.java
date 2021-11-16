@@ -3,6 +3,8 @@ package com.jofer.javabackend;
 import com.jofer.javabackend.job.*;
 import com.jofer.javabackend.user.*;
 
+import java.util.ArrayList;
+
 // Currently testing in terminal basic functionality of Jofer GUI.
 public class Main {
 
@@ -49,8 +51,8 @@ public class Main {
         // Print job information
         System.out.println(nextJob.getTitle());
         System.out.println(nextJob.getDepartment());
-        System.out.println(nextJob.getEmployer());
-        System.out.println(nextJob.getApplicants());
+        System.out.println(nextJob.getEmployer().getUsername());
+        System.out.println(nextJob.getEmployer().getCompany());
 
     }
 }
