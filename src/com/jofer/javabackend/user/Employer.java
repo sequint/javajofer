@@ -12,7 +12,7 @@ public class Employer extends User {
     // Default Constructor
     public Employer() {
         company = "";
-        postedJobs = new ArrayList<Job>();
+        postedJobs = new ArrayList<>();
     }
 
     // Setter methods
