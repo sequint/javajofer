@@ -54,5 +54,9 @@ public class Main {
         System.out.println(nextJob.getEmployer().getUsername());
         System.out.println(nextJob.getEmployer().getCompany());
 
+        for ( int index = 0; index < nextJob.getApplicants().size(); index++ ) {
+            System.out.println(nextJob.getApplicants().get(index).getUsername());
+        }
+
     }
 }
