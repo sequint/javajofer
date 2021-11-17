@@ -70,5 +70,43 @@ public class Negotiator {
     }
 
     // Handle offer accepted.
+    public void handleOfferAccepted( String user ) {
+
+        if ( user.equals("applicant") ) {
+            this.applicantAcceptedOffer = true;
+
+            // If there is no employer counter, final salary equals initial offer.
+            if ( employersCounter == 0.00 ) {
+                this.finalSalary = initialOffer;
+            }
+            else {
+                this.finalSalary = employersCounter;
+            }
+
+        }
+        else if ( user.equals("employer") ) {
+            this.employerAcceptedOffer = true;
+            this.finalSalary = applicantsCounter;
+        }
+        else {
+            System.out.println("Invalid user");
+        }
+
+    }
+
+    // Handle offer declined.
+    public void handleOfferDeclined( String user ) {
+
+        if ( user.equals("applicant") ) {
+            this.applicantDeclinedOffer = true;
+        }
+        else if ( user.equals("employer") ) {
+            this.employerDeclinedOffer = true;
+        }
+        else {
+            System.out.println("Invalid user");
+        }
+
+    }
 
 }
