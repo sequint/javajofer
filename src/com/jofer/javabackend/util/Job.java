@@ -5,38 +5,36 @@ import java.util.UUID;
 
 public class Job {
     // Job class private variables
-    String iD,
-            title,
-            department;
-    Employer employer;
-    ArrayList<Applicant> applicants;
+    private String iD;
+    private String title;
+    private String department;
+    private Employer employer;
+    private ArrayList<Applicant> applicants;
 
     // Default Constructor
     public Job() {
         iD = UUID.randomUUID().toString();
-        title = "";
-        department = "";
         employer = new Employer();
         applicants = new ArrayList<>();
     }
 
     // Setter methods
-    public void setTitle( String jobTitle ) {
-        title = jobTitle;
+    public void setTitle( String title ) {
+        this.title = title;
     }
-    public void setDepartment( String jobDepartment ) {
-        department = jobDepartment;
+    public void setDepartment( String department ) {
+        this.department = department;
     }
-    public void setEmployer( Employer employ ) {
-        employer = employ;
+    public void setEmployer( Employer employer ) {
+        this.employer = employer;
     }
-    public void setApplicants( ArrayList<Applicant> aplcs ) {
-        applicants = aplcs;
+    public void setApplicants( ArrayList<Applicant> applicants ) {
+        this.applicants = applicants;
     }
 
     // Add one applicant.
     public void addOneApplicant( Applicant applicant ) {
-        applicants.add( applicant );
+        this.applicants.add( applicant );
     }
 
     // Getter methods

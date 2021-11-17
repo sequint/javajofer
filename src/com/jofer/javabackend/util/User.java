@@ -4,33 +4,29 @@ import java.util.UUID;
 
 public class User {
     // User class private variables
-    String iD,
-            firstName,
-            lastName,
-            username,
-            avatar;
+    private String iD;
+    private String firstName;
+    private String lastName;
+    private String username;
+    private String avatar;
 
     // Default Constructor
     public User() {
         iD = UUID.randomUUID().toString();
-        firstName = "";
-        lastName = "";
-        username = "";
-        avatar = "";
     }
 
     // Setter methods
-    public void setFirstName( String first ) {
-        firstName = first;
+    public void setFirstName( String firstName ) {
+        this.firstName = firstName;
     }
-    public void setLastName( String last ) {
-        lastName = last;
+    public void setLastName( String lastName ) {
+        this.lastName = lastName;
     }
-    public void setUsername( String userNm ) {
-        username = userNm;
+    public void setUsername( String username ) {
+        this.username = username;
     }
-    public void setAvatar( String avt ) {
-        avatar = avt;
+    public void setAvatar( String avatar ) {
+        this.avatar = avatar;
     }
 
     // Getter methods
